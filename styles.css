@@ -1,0 +1,276 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Root Variables */
+:root {
+  /* Color palette */
+  --primary-color: #6b95ef;
+  --secondary-color: #6b95ef;
+  --footer-color: #f9f9f9;
+  --nav-bg-color: #444;
+  --footer-bg-color: #ffffff; /* Updated footer background color */
+  --link-hover-color: #0275d8;
+
+  /* Font sizes */
+  --title-font-size: 3.2rem;
+  --small-font-size: 1.3rem;
+  --h2-font-weight: 600;
+
+  /* Container */
+  --container-size: 73%;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: var(--secondary-color);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #ffffff;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-bg-color);
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+nav ul.nav-right li a {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+nav ul.nav-right li a.signup-btn {
+  background-color: var(--link-hover-color);
+}
+
+nav ul li a:hover {
+  opacity: 0.85;
+}
+
+/* Section (Main Content) */
+section {
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 12px;
+  width: var(--container-size);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+h1 {
+  font-size: var(--title-font-size);
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg-color);
+  color: #e6e6e6; /* Updated footer text color */
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Buttons */
+button {
+  font-size: 1.6rem;
+  margin-top: 4.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--link-hover-color);
+  opacity: 0.9;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--link-hover-color);
+}
+/* Add this CSS to your existing styles.css */
+
+/* Header Content */
+.header-content {
+    display: flex;
+    align-items: center; /* Vertically center the logo and title */
+    padding: 1.5rem 2rem; /* Add some padding */
+}
+
+.logo img {
+    height: 50px; /* Set a fixed height for the logo */
+    margin-right: 1rem; /* Space between logo and title */
+}
+
+h1 {
+    font-size: var(--title-font-size);
+    color: var(--primary-color);
+    margin: 0; /* Remove default margin */
+}
+/* Secondary Frame for Image */
+.secondary-frame {
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  margin: 2rem auto;
+  border: 4px solid var(--primary-color); /* Border with primary color */
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f6f6f6; /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  text-align: center;
+}
+
+/* Image inside the Frame */
+.secondary-frame img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Optional: Add some padding around the frame */
+.secondary-frame p {
+  font-size: 1.6rem;
+  color: #333;
+  margin-top: 1rem;
+  text-align: center;
+}
+/* Container for the main content (white space) */
+.main-content {
+  background-color: white;
+  width: 80%;
+  margin: 2rem auto;
+  border-radius: 12px;
+  padding: 0; /* Remove padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Adjust the height of the container as needed */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Image styling to fit within the container */
+.main-content img {
+  width: 50%; /* Sets the width of the image to fill the container */
+  height: auto; /* Ensures the image maintains its aspect ratio */
+  max-width: 300px; /* Restrict max-width to control the size */
+  max-height: 50%; /* Adjust this value to control the image height */
+  object-fit: contain; /* Ensures the image scales without distortion */
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+/* Optional: Utility class to make image responsive */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+/* Styles for the section where the image is placed */
+section {
+  position: relative; /* Ensure positioning context */
+  width: var(--container-size); /* Use the same width as your container */
+  margin: 2rem auto; /* Center the section */
+  background-color: white; /* Background color */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Styles for the image */
+section img {
+  width: 100%; /* Make the image take the full width of the section */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Fit image within container without cropping */
+}
